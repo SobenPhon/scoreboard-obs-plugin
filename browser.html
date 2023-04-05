@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" type="text/css" href="css/style-browser.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="switchpanel"></div>
+
+    <div class="scoreboard">
+      <div class="team1 score">
+        <label id="team1">14</label>
+      </div>
+
+      <div class="team2 score">
+        <label id="team2">13</label>
+      </div>
+    </div>
+
+    <script>
+      const bc = new BroadcastChannel("scoreboard");
+      var data;
+
+      bc.onmessage = (message) => {
+        data = message.data;
+        if (data == "refresh") {
+          location.reload();
+        }
+      };
+
+      var team1score = localStorage.getItem("team1");
+      var team2score = localStorage.getItem("team2");
+
+      document.getElementById("team1").innerHTML = team1score;
+      document.getElementById("team2").innerHTML = team2score;
+    </script>
+  </body>
+</html>

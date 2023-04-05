@@ -1,0 +1,99 @@
+:root {
+  --primary: crimson;
+  --dark: #1f2937;
+  --darkdark: #111827;
+  --light: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  /* font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	sans-serif; */
+  color: var(--light);
+  background-color: var(--dark);
+  font-family: "Oswald", sans-serif;
+}
+
+.control-panel {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--darkdark);
+}
+
+.card {
+  width: 100%;
+  height: 30px;
+  border: 1px solid var(--dark);
+  padding: 1.5rem 0.1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dock-title {
+  color: var(--light);
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Score */
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.score a {
+  text-decoration: none;
+  padding: 0 5px;
+  color: inherit;
+}
+
+.score label {
+  background-color: var(--primary);
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Control area */
+.control-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Button style */
+.btn-group a {
+  color: var(--light);
+  background-color: var(--dark);
+  text-decoration: none;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.btn-group a:hover {
+  background-color: var(--primary);
+}
+
+.btn-group a:last-of-type {
+  background-color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.btn-group a:last-of-type:hover {
+  color: var(--dark);
+}

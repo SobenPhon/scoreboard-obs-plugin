@@ -1,0 +1,2 @@
+1. Add dock control with Docks menu
+2. Add browser source with URL (Local file not work anymore)

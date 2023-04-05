@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" type="text/css" href="css/style-control.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="control-panel">
+      <h1 class="dock-title">Scoreboard control</h1>
+
+      <div class="score card">
+        <a href="#">Team 1</a>
+        <label id="team1score">0</label>
+        :
+        <label id="team2score">0</label>
+        <a href="#">Team 2</a>
+      </div>
+
+      <!-- TODO -->
+      <!-- Change score color input -->
+      <!-- Change score font input -->
+      <!-- team logo -->
+
+      <div class="control-area">
+        <div class="team1 btn-group">
+          <a href="#" onclick="team1Add()" class="team1add"
+            ><i class="fas fa-plus-circle"></i
+          ></a>
+          <a href="#" onclick="team1Subtract()" class="team1subtract"
+            ><i class="fas fa-minus-circle"></i
+          ></a>
+          <a href="#" onclick="team1Reset()" class="team1reset"
+            ><i class="fas fa-sync-alt"></i
+          ></a>
+        </div>
+
+        <div class="team2 btn-group">
+          <a href="#" onclick="team2Add()" class="team2add"
+            ><i class="fas fa-plus-circle"></i
+          ></a>
+          <a href="#" onclick="team2Subtract()" class="team2subtract"
+            ><i class="fas fa-minus-circle"></i
+          ></a>
+          <a href="#" onclick="team2Reset()" class="team2reset"
+            ><i class="fas fa-sync-alt"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/script.js"></script>
+</html>
